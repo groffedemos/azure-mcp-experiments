@@ -26,6 +26,7 @@ jobs:
           ls -l
           echo
           echo
+          cd azure-mcp
           pwd
           echo
           ls -l
