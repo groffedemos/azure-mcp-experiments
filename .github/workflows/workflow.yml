@@ -1,7 +1,6 @@
 name: azure-mcp-experiments
 
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
     branches: [ "main" ]
   pull_request:
@@ -29,4 +28,9 @@ jobs:
           cd azure-mcp
           pwd
           echo
+
+      - name: Exibir conteudo do Dockerfile que sera empregado no build da imagem
+        run: |
+          cd azure-mcp
+          cat Dockerfile
           ls -l
