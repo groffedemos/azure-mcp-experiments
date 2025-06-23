@@ -31,6 +31,11 @@ jobs:
 
       - name: Exibir conteudo do Dockerfile que sera empregado no build da imagem
         run: |
+          echo
           cd azure-mcp
+          pwd
+          echo '***** Conteudo do arquivo Dockerfile *****'
+          echo '---'
+          echo
           cat Dockerfile
           ls -l
